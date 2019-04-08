@@ -1,0 +1,179 @@
+// Progress Bar
+.container {
+	width: 100%;
+	margin: 10px auto 0;
+	padding: 20px;
+	display: grid;
+	grid-gap: 10%;
+	grid-template-columns: repeat(2, 1fr);
+
+	.progress {
+		li {
+			position: relative;
+			list-style: none;
+			margin: 40px 0;
+			font-weight: 300;
+			letter-spacing: 4px;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: calc(100% + 10px);
+				left: 0;
+				width: 100%;
+				height: 15px;
+				background-color: lighten($secondary-color, 30);
+				border-radius: 1000px;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				top: calc(100% + 10px);
+				left: 0;
+				width: 100%;
+				height: 15px;
+				background-color: $secondary-color;
+				border-radius: 1000px;
+				animation-duration: 5s;
+				animation-timing-function: ease-out;
+				animation-fill-mode: forwards;
+			}
+			&.html:after {
+				animation-name: html;
+			}
+			@keyframes html {
+				from {
+					width: 0%;
+					transition-delay: 0.8s;
+				}
+				to {
+					width: 70%;
+					transition-delay: 0.8s;
+				}
+			}
+			&.css:after {
+				animation-name: css;
+			}
+			@keyframes css {
+				from {
+					width: 0%;
+					transition-delay: 0.8s;
+				}
+				to {
+					width: 70%;
+					transition-delay: 0.8s;
+				}
+			}
+			&.js:after {
+				animation-name: js;
+			}
+			@keyframes js {
+				from {
+					width: 0%;
+					transition-delay: 0.8s;
+				}
+				to {
+					width: 60%;
+					transition-delay: 0.8s;
+				}
+			}
+			&.sass:after {
+				animation-name: sass;
+			}
+			@keyframes sass {
+				from {
+					width: 0%;
+					transition-delay: 0.8s;
+				}
+				to {
+					width: 65%;
+					transition-delay: 0.8s;
+				}
+			}
+			&.jq:after {
+				animation-name: jq;
+			}
+			@keyframes jq {
+				from {
+					width: 0%;
+					transition-delay: 0.8s;
+				}
+				to {
+					width: 48%;
+					transition-delay: 0.8s;
+				}
+			}
+			&.bt:after {
+				animation-name: bt;
+			}
+			@keyframes bt {
+				from {
+					width: 0%;
+					transition-delay: 0.8s;
+				}
+				to {
+					width: 50%;
+					transition-delay: 0.8s;
+				}
+			}
+			&.ps:after {
+				animation-name: ps;
+			}
+			@keyframes ps {
+				from {
+					width: 0%;
+					transition-delay: 0.8s;
+				}
+				to {
+					width: 70%;
+					transition-delay: 0.8s;
+				}
+			}
+			&.cr:after {
+				animation-name: cr;
+			}
+			@keyframes cr {
+				from {
+					width: 0%;
+					transition-delay: 0.8s;
+				}
+				to {
+					width: 95%;
+					transition-delay: 0.8s;
+				}
+			}
+			&.ai:after {
+				animation-name: ai;
+			}
+			@keyframes ai {
+				from {
+					width: 0%;
+					transition-delay: 0.8s;
+				}
+				to {
+					width: 50%;
+					transition-delay: 0.8s;
+				}
+			}
+			&.others:after {
+				animation-name: others;
+			}
+			@keyframes others {
+				from {
+					width: 0%;
+					transition-delay: 0.8s;
+				}
+				to {
+					width: 50%;
+					transition-delay: 0.8s;
+				}
+			}
+		}
+	}
+}
+.is-visible {
+	display: block;
+}
+.is-hidden {
+	display: none;
+}

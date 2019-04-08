@@ -1,0 +1,91 @@
+.menu-navigator {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	cursor: pointer;
+	@include easeOut;
+
+	a {
+		color: lighten($primary-color, 19);
+		@include easeOut;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	// Rotate
+	&.close {
+		transform: rotate(-90deg);
+	}
+}
+.iconnav {
+	opacity: 0.9;
+	visibility: hidden;
+
+	&.show {
+		visibility: visible;
+	}
+
+	&-nav {
+		position: absolute;
+		overflow: hidden;
+		display: flex;
+		top: 1rem;
+		left: 80px;
+		padding: 0;
+		color: lighten($primary-color, 9);
+		list-style: none;
+
+		&.show {
+			// SLide in from Top
+			transform: translate3d(0, 0, 0);
+		}
+	}
+
+	&-list {
+		padding-left: 20px;
+		padding-bottom: 10px;
+
+		a#twitter {
+			color: darken($secondary-color, 5);
+
+			&:hover {
+				@include easeOut;
+				color: rgb(0, 153, 255);
+			}
+		}
+		a#facebook {
+			color: darken($secondary-color, 5);
+
+			&:hover {
+				@include easeOut;
+				color: rgb(17, 0, 255);
+			}
+		}
+		a#linkedin {
+			color: darken($secondary-color, 5);
+
+			&:hover {
+				@include easeOut;
+				color: rgb(0, 174, 255);
+			}
+		}
+		a#github {
+			color: darken($secondary-color, 5);
+
+			&:hover {
+				@include easeOut;
+				color: set-text-color($primary-color);
+			}
+		}
+		a#gplus {
+			color: darken($secondary-color, 5);
+
+			&:hover {
+				@include easeOut;
+				color: red;
+			}
+		}
+	}
+}

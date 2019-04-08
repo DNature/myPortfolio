@@ -1,0 +1,20 @@
+{
+	"name": "modern_portfolio",
+	"version": "1.0.0",
+	"description": "Responsice portfolio website",
+	"main": "index.js",
+	"scripts": {
+		"sass": "node-sass -w scss/ -o dist/css/ --recursive"
+	},
+	"author": "Divine Nature",
+	"license": "MIT",
+	"dependencies": {
+		"gulp-concat": "^2.6.1",
+		"gulp-uglify": "^3.0.2",
+		"node-sass": "^4.11.0",
+		"splitting": "^1.0.6"
+	},
+	"devDependencies": {
+		"gulp": "^4.0.0"
+	}
+}
