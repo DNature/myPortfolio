@@ -115,6 +115,8 @@ main {
 		grid-area: bioimage;
 		margin: auto;
 		border-radius: 50%;
+		width: 200px;
+		height: 200px;
 		filter: grayscale(1);
 		border: 3px solid $secondary-color;
 		@include easeOut;
